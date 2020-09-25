@@ -43,7 +43,6 @@
 //#define col4 PORTBbits.RB7
 
 unsigned char const seven_segment_LUT[8] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07}; // Seven-segment display LookUp Table
-char old_key = 9;
 
 char kpd_scan();
 void seven_seg_disp(char digit);
@@ -120,21 +119,12 @@ char kpd_scan(){
 void seven_seg_disp(char digit) {
     if (digit == 8) { // 'R' - Reset Display and PORTA outputs        
         PORTA = 0x00;
-        PORTC = 0x00;
-        old_key = 9;
+        PORTC = 0x00;        
     }
     
     if (digit < 8) {
-        if (digit == old_key) { // Reset Display and only PORTA output related to the pressed key
-            PORTC = 0x00; 
-            PORTA ^= (1 << digit); 
-            old_key = 9;
-        } 
-        else { // Set Display with number related to the pressed key and only PORTA output according to the number
-            PORTC = seven_segment_LUT[digit];
-            PORTA ^= (1 << digit);
-            old_key = digit;
-        }		 
+        PORTC = seven_segment_LUT[digit];
+        PORTA ^= (1 << digit);        		 
     }	
 }
 	 
