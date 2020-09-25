@@ -1,6 +1,6 @@
 /*
  * File:   Keypad_Matrix.c
- * Author: A. In·cio Morais
+ * Author: A. In√°cio Morais
  *
  * PIC16F886 - MPLAB X IDE v5.40 - XC8-CC v2.30
  * MCLRE OFF - INTRC_NOCLKOUT 8 MHz
@@ -41,7 +41,6 @@
 #define col2 PORTBbits.RB5
 #define col3 PORTBbits.RB6
 //#define col4 PORTBbits.RB7
-
 
 unsigned char const seven_segment_LUT[8] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07}; // Seven-segment display LookUp Table
 char old_key = 9;
