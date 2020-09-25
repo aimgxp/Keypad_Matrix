@@ -10,4 +10,4 @@ How to simulate it using Proteus 8:
 
  Can you help me with a small donation? PayPal: anderson.morais@protonmail.com
  
- Next content: LM50 ADC Oversampling + LCD_Display (MPLAB X IDE + XC8)
+ Next content: LM50 ADC Oversampling + LCD Display (MPLAB X IDE + XC8)
