@@ -7,6 +7,10 @@
  * 
  * See attached Proteus v8.9 SP2 simulation
  *
+ * Can you help us with a small donation? PayPal: anderson.morais@protonmail.com
+ *
+ * Next content: LM50 ADC Oversampling + LCD_Display (MPLAB X IDE + XC8)
+ *
  * Created on 25 de Setembro de 2020, 11:55
  */
 
