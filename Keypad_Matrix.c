@@ -7,7 +7,7 @@
  * 
  * See attached Proteus v8.9 SP2 simulation
  *
- * Can you help us with a small donation? PayPal: anderson.morais@protonmail.com
+ * Can you help me with a small donation? PayPal: anderson.morais@protonmail.com
  *
  * Next content: LM50 ADC Oversampling + LCD Display (MPLAB X IDE + XC8)
  *
