@@ -45,7 +45,7 @@
 unsigned char const seven_segment_LUT[8] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07}; // Seven-segment display LookUp Table
 
 char kpd_scan();
-void seven_seg_disp(char digit);
+void driver(char digit);
 
 void main(void) {
     OSCCONbits.IRCF = 0b111;    // IRCF<2:0> = 111 = 8 MHz
@@ -60,7 +60,7 @@ void main(void) {
     PORTC = 0x00;
     
     while(1) {    	
-        seven_seg_disp(kpd_scan());
+        driver(kpd_scan());
     }
 }    
 
@@ -116,7 +116,7 @@ char kpd_scan(){
         return key_scanned;	
 }
 
-void seven_seg_disp(char digit) {
+void driver(char digit) {
     if (digit == 8) { // 'R' - Reset Display and PORTA outputs        
         PORTA = 0x00;
         PORTC = 0x00;        
