@@ -122,7 +122,7 @@ void seven_seg_disp(char digit) {
         PORTC = 0x00;        
     }
     
-    if (digit < 8) {
+    if (digit < 8) { // Set Display with number related to the pressed key and change PORTA output according to the same number
         PORTC = seven_segment_LUT[digit];
         PORTA ^= (1 << digit);        		 
     }	
