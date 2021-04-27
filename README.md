@@ -9,3 +9,5 @@ How to simulate it using Proteus 8:
 - Click the 'OK' button to close the 'Edit Component' window and click the play button to run the simulation.
 
  Next content: LM50 ADC Oversampling + LCD Display (MPLAB X IDE + XC8)
+ 
+ A. Inácio Morais - anderson.morais@protonmail.com - (35) 99161-9878
